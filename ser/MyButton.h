@@ -5,7 +5,8 @@
 #define BUT_STATUS_DOWN   1		// 箭头向下的标题框
 #define BUT_STATUS_RIGHT  2		// 箭头向右的标题框
 
-#define IS_CBUTTON 0
+//此处为测试用CButtonST和CImageButton区别
+#define IS_CBUTTON 1
 #if IS_CBUTTON
 typedef CBitmapButton  CCButton; 
 #else
