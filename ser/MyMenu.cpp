@@ -126,10 +126,10 @@ int CMyMenu::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	// TODO:  在此添加您专用的创建代码
 	CAcModuleResourceOverride resourceOverride;
-	//m_pDlg = new CMyDlg();
-	//m_pDlg->Create(IDD_MYDLG, this);
-	//m_pDlg->MoveWindow(0, 20, 200, 1600, TRUE);
-	//m_pDlg->ShowWindow(SW_SHOW);
+	m_pDlg = new CMyDlg();
+	m_pDlg->Create(IDD_MYDLG, this);
+	m_pDlg->MoveWindow(0, 20, 200, 1600, TRUE);
+	m_pDlg->ShowWindow(SW_SHOW);
 
 	GetWindowRect(&m_rect);
 	m_p0.x = (m_rect.right - m_rect.left); //m_rect.Size().cx;
